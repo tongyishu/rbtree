@@ -5,8 +5,8 @@
 //比较函数,这里比较类型为 long
 int compare(void *a, void *b)
 {
-	int _a = (long)a;
-	int _b = (long)b;
+	long _a = (long)a;
+	long _b = (long)b;
 	if(_a < _b) return -1;
 	if(_a > _b) return 1;
 	return 0;
