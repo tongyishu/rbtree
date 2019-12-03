@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#ifdef __cplusplus
+#if __cplusplus
+extern "C" {
+#endif
+#endif
+
 //左旋,x的右结点成为其父结点
 static void rbt_left_rotate(struct rbtree *T, struct rbtree_node *x)
 {
@@ -410,3 +416,9 @@ void* rbtree_maximum(struct rbtree *T)
 		return NULL;
 	return x->key;
 }
+
+#ifdef __cplusplus
+#if __cplusplus
+}
+#endif
+#endif
