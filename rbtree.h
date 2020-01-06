@@ -2,9 +2,7 @@
 #define RBTREE_H
 
 #ifdef __cplusplus
-#if __cplusplus
 extern "C" {
-#endif
 #endif
 
 #define RED 0
@@ -81,9 +79,7 @@ void* rbtree_minimum(struct rbtree *T);
 void* rbtree_maximum(struct rbtree *T);
 
 #ifdef __cplusplus
-#if __cplusplus
 }
-#endif
 #endif
 	
 #endif
