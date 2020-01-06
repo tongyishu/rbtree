@@ -3,9 +3,7 @@
 #include <stdio.h>
 
 #ifdef __cplusplus
-#if __cplusplus
 extern "C" {
-#endif
 #endif
 
 //左旋,x的右结点成为其父结点
@@ -418,7 +416,5 @@ void* rbtree_maximum(struct rbtree *T)
 }
 
 #ifdef __cplusplus
-#if __cplusplus
 }
-#endif
 #endif
